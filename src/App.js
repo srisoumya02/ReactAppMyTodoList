@@ -47,7 +47,7 @@ function App() {
     if (arr) {
       dispatch(addTasks(JSON.parse(arr)));
     }
-  }, []);
+  }, [dispatch]);
 
   useEffect(() => {
     if (tasks && tasks.length > 0) {
